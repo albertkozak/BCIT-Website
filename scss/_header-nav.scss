@@ -1,0 +1,126 @@
+// Header & Nav Styles
+
+header {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav-brand {
+  width: 5rem;
+}
+.menu-icons i {
+  font-size: 3.5rem;
+  color: $bcit-white;
+  cursor: pointer;
+}
+.close i {
+  color: $bcit-dark-grey;
+}
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: $bcit-yellow;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  transition: all 650ms ease-in-out;
+}
+.nav-list.active {
+  right: 0;
+}
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+.nav-item {
+  margin: 1.5rem 0;
+}
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $title-black;
+
+  #{$link-hover-selector} {
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  header {
+    height: 8rem;
+  }
+
+  .nav-brand {
+    width: 6rem;
+  }
+
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+
+  .nav-link,
+  .current {
+    color: $bcit-white;
+    position: relative;
+    font-size: 1.3rem;
+  }
+
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: $bcit-yellow;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+
+  .current::before {
+    transform: scaleX(1);
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .nav-link:hover {
+    color: $bcit-white;
+  }
+}

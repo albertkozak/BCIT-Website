@@ -1,0 +1,164 @@
+// Calendar Styles
+#today {
+  color: $bcit-navy-light-hex;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: $font-size-large;
+}
+
+.calendar-view {
+  .weekdays {
+    display: none;
+  }
+
+  li {
+    border-radius: 0.2rem;
+    padding: 1.56rem 1.88rem;
+    // justify-content: space-between;
+    margin-bottom: 1.56rem;
+    // font-size: 1.1rem;
+    display: block;
+  }
+
+  .month {
+    background: $bcit-navy-light-hex;
+    font-family: $heading-font, sans-serif;
+    font-size: $font-size-medium;
+    color: $bcit-white;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    position: --webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .days {
+    .empty {
+      display: none;
+    }
+    .weekend {
+      display: none;
+    }
+
+    li {
+      color: $title-black;
+    }
+    p {
+      font-family: $body-font, sans-serif;
+      font-size: $font-size-small;
+    }
+    h4 {
+      font-family: $body-font, sans-serif;
+      padding: 1rem 0 0;
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+    h6 {
+      font-family: $body-font, sans-serif;
+      padding: 0.5rem 0 0;
+      font-size: $font-size-medium;
+      font-weight: normal;
+    }
+    li:nth-child(odd) {
+      background-color: #fff;
+      box-shadow: $box-shadow;
+    }
+    li:nth-child(even) {
+      background-color: #f7f7f7;
+      box-shadow: $box-shadow;
+    }
+  }
+  .toggle-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-small) {
+  .calendar-view {
+    .weekdays {
+      display: flex;
+      margin: 0;
+      padding: 0.5rem 0;
+      background-color: #ddd;
+      position: --webkit-sticky;
+      position: sticky;
+      top: 8rem;
+
+      li {
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+      }
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    .month {
+      width: 100%;
+      text-align: center;
+      font-size: 2.1rem;
+      letter-spacing: 0.3rem;
+      margin: 1rem 0 0;
+    }
+
+    .days {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: stretch;
+      padding: 10px 0;
+      background-color: #eee;
+      margin: 0;
+
+      .empty {
+        display: block;
+      }
+
+      .weekend {
+        display: block;
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 13.6%;
+        text-align: center;
+        padding: 2rem 0;
+        color: $title-black;
+        margin-bottom: 0;
+
+        .dayOfWeek {
+          display: none;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          padding: 0.5rem 0;
+        }
+
+        h6 {
+          font-size: 1.2rem;
+          padding-top: 0;
+        }
+      }
+      li:nth-child(odd) {
+        background-color: #eee;
+        box-shadow: none;
+      }
+      li:nth-child(even) {
+        background-color: #eee;
+        box-shadow: none;
+      }
+    }
+
+    .toggle-btn {
+      display: block;
+      padding-bottom: 3rem;
+    }
+  }
+}

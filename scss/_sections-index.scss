@@ -1,0 +1,317 @@
+// General Sections
+
+section {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.title-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  color: $title-black;
+}
+
+.title-heading h3 {
+  font-size: 1.4rem;
+}
+
+.title-heading h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem;
+  font-family: $heading-font;
+}
+
+.title-heading p {
+  text-transform: initial;
+}
+
+// Application Section
+
+.experience-technology {
+  padding: 0;
+
+  .title-heading {
+    margin-bottom: 6rem;
+
+    h1 {
+      margin: 0.5rem 0 6rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: $grid-gap;
+}
+
+.application-grid-item .title-heading {
+  margin-bottom: 1rem;
+  color: $bcit-white;
+
+  h1 {
+    color: $bcit-yellow;
+    margin-bottom: 1rem;
+  }
+}
+
+.application-grid-item {
+  height: 40rem;
+  padding: 5rem;
+  color: $bcit-white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 0;
+
+  ul {
+    list-style-type: disc;
+
+    a {
+      color: #fff;
+      font-weight: 700;
+
+      #{$link-hover-selector} {
+        color: $bcit-yellow;
+      }
+    }
+  }
+}
+
+.application-grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    135deg,
+    $bcit-navy-dark-rgba 0%,
+    $bcit-navy-light-rgba 100%
+  );
+  z-index: -1;
+}
+
+.step-one {
+  background: url("../images/button5.jpg") center no-repeat;
+  li {
+    font-size: $font-size-small;
+  }
+}
+
+.step-two {
+  background: url("../images/button1.jpg") center no-repeat; /* MUST RESIZE */
+
+  li {
+    font-size: $font-size-small;
+  }
+}
+
+.step-three {
+  background: url("../images/button2.jpg") center no-repeat; /* MUST RESIZE */
+  p {
+    font-size: $font-size-medium;
+  }
+
+  li {
+    font-size: $font-size-small;
+  }
+
+  .btn {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .application-grid-item {
+    p {
+      font-size: $font-size-large;
+    }
+    li {
+      font-size: $font-size-medium;
+    }
+    .btn {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: $phone) {
+  .application-grid-item {
+    p {
+      font-size: 1.6rem;
+    }
+    li {
+      font-size: $font-size-large;
+    }
+    .btn {
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (min-width: 616px) {
+  .application-grid-item {
+    p {
+      font-size: $font-size-medium;
+    }
+    li {
+      font-size: $font-size-small;
+    }
+    .btn {
+      width: 65%;
+    }
+  }
+}
+
+// Technologies
+
+.technologies {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(
+      135deg,
+      $bcit-navy-dark-rgba 0%,
+      $bcit-navy-light-rgba 100%
+    ),
+    url("../images/development2-mobile.jpg") center no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.technologies::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 4.7rem;
+  background: url("../images/wave-small-reversed.png") center no-repeat;
+  background-size: cover;
+}
+
+.technology {
+  width: 100%;
+  color: $bcit-white;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.technology-text-box {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  .title-heading {
+    color: $bcit-white;
+    padding-top: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+.technology-text-box i {
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: $bcit-yellow;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.technology ul {
+  list-style: disc;
+  padding: 30px 50px 0;
+  text-align: left;
+}
+
+.technology li {
+  font-size: $font-size-medium;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: $phone) {
+  .technologies::before {
+    height: 9.4rem;
+    background: url("../images/wave-medium-reversed.png");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: $tablet-small) {
+  .technology-text-box {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .technology li {
+    font-size: $font-size-large;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: $tablet-large) {
+  .technologies {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(
+        135deg,
+        $bcit-navy-dark-rgba 0%,
+        $bcit-navy-light-rgba 100%
+      ),
+      url("../images/development2-banner.jpg") center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+  .technology {
+    padding-top: 150px;
+  }
+
+  .technologies::before {
+    height: 22.7rem;
+    background: url("../images/wave-large-reversed.png");
+    background-size: cover;
+  }
+
+  .technologies {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .technology-text-box {
+    width: 50%;
+  }
+}
+
+//  Journey
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: $grid-gap;
+  margin-bottom: 2rem;
+}
+
+.journey-grid p {
+  color: $title-black;
+}

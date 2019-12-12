@@ -1,0 +1,19 @@
+// CTA Button
+
+.btn {
+  background-color: #fef202;
+  border-radius: 2rem;
+  color: #323232;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 650ms;
+  transition: color 650ms;
+}
+
+.btn:hover {
+  background-color: #548db8;
+  color: #fafafa;
+}

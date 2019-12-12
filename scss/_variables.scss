@@ -1,0 +1,35 @@
+// Colors
+$bcit-navy-dark-hex: #013d70;
+$bcit-navy-dark-rgba: rgba(1, 61, 112, 0.9);
+$bcit-navy-light-hex: #005889;
+$bcit-navy-light-rgba: rgba(0, 88, 137, 0.8);
+$bcit-yellow: #fef202;
+$bcit-yellow-rgba: rgba(254, 242, 2, 0.99);
+$bcit-white: #fafafa;
+$bcit-dark-grey: #323232;
+
+$title-black: rgba(0, 0, 0, 0.7);
+$box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+
+// $footer
+
+// Fonts
+$heading-font: "Aldrich", sans-serif;
+$body-font: "Nunito", sans-serif;
+
+// MISC
+$grid-gap: 2.5rem;
+
+//Sizing:
+$font-size-small: 1.3rem;
+$font-size-medium: 1.4rem;
+$font-size-large: 1.5rem;
+
+//Media Query Breakpoints
+$phone: 470px;
+$tablet-small: 700px;
+$tablet-large: 890px;
+$desktop: 1200px;
+
+// Utility
+$link-hover-selector: "&:hover, &:focus, &:active";

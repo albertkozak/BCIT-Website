@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <img src="images/bcit-logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-icons open">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="fas fa-times"></i>
+            </div>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="schedule.html" class="nav-link">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a href="students.html" class="nav-link">Students</a>
+            </li>
+            <li class="nav-item">
+              <a href="staff.html" class="nav-link">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a href="resources.html" class="nav-link">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a href="courses.html" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link current">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="main-message">
+            <h3>School of Computing and Academic Studies</h3>
+            <h1>CONTACT</h1>
+            <p>
+              Couldn't find an answer that you were looking for or have any
+              other questions? We're here to help and would love to assist in
+              any way we can. Get in touch with us today by choosing a contact
+              method that suits you best below.
+            </p>
+            <div class="cta">
+              <a href="index.html" class="btn">Apply now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="title-heading">
+            <h3>Want to get in touch?</h3>
+            <h1>Check out how to contact us</h1>
+          </div>
+          <div class="contact-grid">
+            <!-- grid item #1 -->
+            <div class="contact-grid-item address">
+              <div class="title-heading">
+                <h3>Contact Us</h3>
+                <h1>Mailing address</h1>
+              </div>
+              <ul>
+                <li>
+                  <p>HTP Programs - BCIT Downtown Campus</p>
+                  <a href="http://bit.ly/2PFL9fw"
+                    >350 - 555 Seymour Street<br />
+                    Vancouver, BC, Canada <br />
+                    V6B 3H6</a
+                  >
+                </li>
+              </ul>
+              <a
+                class="btn"
+                href="https://www.bcit.ca/about/downtown.shtml"
+                target="_blank"
+                >Campus info, map & directions</a
+              >
+            </div>
+            <!-- grid item #2 -->
+            <div class="contact-grid-item details">
+              <div class="title-heading">
+                <h3>Contact Us</h3>
+                <h1>Contact details</h1>
+              </div>
+              <p>For admission and program inquiries:</p>
+              <ul>
+                <li>
+                  <b>Phone: </b><a href="tel:604.412.7788">604.412.7788</a>
+                </li>
+                <li><b>Fax: </b><a href="tel:604.408.0921">604.408.0921</a></li>
+                <li>
+                  <b>Email: </b><a href="mailto:TTP@bcit.ca">TTP@bcit.ca</a>
+                </li>
+              </ul>
+            </div>
+            <!-- grid item #3 -->
+            <div class="contact-grid-item links">
+              <div class="title-heading">
+                <h3>Contact Us</h3>
+                <h1>Helpful Links</h1>
+              </div>
+              <ul>
+                <li><a href="index.html">Start your application.</a></li>
+                <li>
+                  <a href="https://secure.bcit.ca/sis/apply/" target="_blank"
+                    >Check your application status.</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.bcit.ca/international/" target="_blank"
+                    >Find more information for international students.</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.bcit.ca/finaid/" target="_blank"
+                    >Find more information about financial aids.</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="contact-grid-item form-entry">
+              <div class="title-heading">
+                <h3>Questions?</h3>
+                <h1>Contact Form</h1>
+              </div>
+              <form
+                onSubmit="alert('Thank you for contacting us. A student representative will be in touch shortly.');"
+                method="post"
+                class="form"
+              >
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="firstname">First Name</label>
+                  </div>
+                  <div class="form-input">
+                    <input
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      maxlength="80"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="lastname">Last Name</label>
+                  </div>
+                  <div class="form-input">
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      maxlength="80"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="form-input">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      maxlength="80"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-label">
+                    <label for="phone">Phone</label>
+                  </div>
+                  <div class="form-input">
+                    <input type="text" name="phone" id="phone" maxlength="30" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="select">
+                    <label
+                      ><input type="radio" name="status" value="Instructor" />
+                      Instructor</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="status"
+                        value="CurrentStudent"
+                        required
+                      />
+                      Current Student</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="status"
+                        value="ProsoectiveStudent"
+                      />
+                      Prospective Student</label
+                    >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="comments">
+                    <label for="comments">Comments</label>
+
+                    <div>
+                      <textarea
+                        name="comments"
+                        id="comments"
+                        rows="5"
+                        cols="23"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="actions">
+                    <!-- <div class="btn"> -->
+                    <input id="submit" type="submit" value="submit &raquo; " />
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy;2019 BCIT Student Project | All Rights Reserved.</p>
+    </footer>
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/a5c678db00.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--TO TOP FUNCTION-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+  </body>
+</html>

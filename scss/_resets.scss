@@ -1,0 +1,32 @@
+// Resets
+
+*,
+*:before,
+*:after {
+   margin:0;
+   padding:0;
+   box-sizing: inherit;
+}
+html {
+   font-family: $body-font, sans-serif;
+   font-size: 10px;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+}
+p {
+   font-size: 1.6rem;
+   font-family: $body-font, sans-serif;
+}
+img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+}
+section {
+   padding: 5rem 0;
+}

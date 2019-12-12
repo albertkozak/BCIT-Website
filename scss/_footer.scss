@@ -1,0 +1,49 @@
+// Footer
+
+footer {
+  padding: 2.5rem 0;
+  background-color: #aaa;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.up {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: #eee;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.up i {
+  color: $title-black;
+  font-size: 2rem;
+  margin: auto;
+}
+/* End footer */
+
+/* Start animations */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $bcit-yellow-rgba;
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(253, 134, 66, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 134, 66, 0);
+  }
+}
+
+@media screen and (min-width: $tablet-small) {
+  .up {
+    width: 5rem;
+    height: 5rem;
+  }
+}

@@ -1,0 +1,65 @@
+// Staff
+
+.staff {
+  padding: 0;
+
+  .title-heading {
+    margin-bottom: 6rem;
+
+    h1 {
+      margin: 0.5rem 0 6rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: $grid-gap;
+  margin-bottom: 2rem;
+
+  p {
+    color: $title-black;
+    font-size: $font-size-medium;
+    padding-bottom: 1rem;
+  }
+}
+
+.staff-grid-item {
+  background-color: #ffffff;
+  box-shadow: $box-shadow;
+  border-radius: 0.2rem;
+  padding: 3rem 5rem;
+  margin-bottom: 1.56rem;
+  text-align: center;
+
+  a {
+    text-transform: lowercase;
+    font-size: $font-size-small;
+    color: $bcit-navy-dark-rgba;
+
+    #{$link-hover-selector} {
+      color: $bcit-navy-light-rgba;
+    }
+  }
+}
+
+.title-heading-staff {
+  color: $title-black;
+
+  h3 {
+    font-size: $font-size-medium;
+  }
+  h1 {
+    font-size: 1.7rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.faculty {
+  margin-bottom: 4rem;
+}

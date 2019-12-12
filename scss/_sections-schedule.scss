@@ -1,0 +1,115 @@
+// Schedule
+#today {
+  color: $bcit-navy-light-hex;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: $font-size-large;
+}
+
+.list-view {
+  .weekdays {
+    display: none;
+  }
+
+  li {
+    border-radius: 0.2rem;
+    padding: 1.56rem 1.88rem;
+    justify-content: space-between;
+    margin-bottom: 1.56rem;
+    font-size: 1.1rem;
+    display: block;
+  }
+
+  .month {
+    background-color: $bcit-navy-light-hex;
+    font-family: $heading-font, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: $bcit-white;
+    position: --webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .days {
+    .empty {
+      display: none;
+    }
+    .weekend {
+      display: none;
+    }
+
+    li {
+      color: $title-black;
+
+      p {
+        font-family: $body-font, sans-serif;
+        font-size: $font-size-small;
+      }
+      h4 {
+        font-family: $body-font, sans-serif;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+        font-weight: normal;
+      }
+      h6 {
+        font-family: $body-font, sans-serif;
+        padding-top: 0.5rem;
+        font-size: $font-size-medium;
+        font-weight: normal;
+      }
+    }
+    li:nth-child(odd) {
+      background-color: #fff;
+      box-shadow: $box-shadow;
+    }
+    li:nth-child(even) {
+      background-color: #f7f7f7;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-small) {
+  .list-view {
+    .month {
+      li {
+        text-align: center;
+        font-size: 2.1rem;
+        padding: 1.56rem 1.88rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+    .days {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+          padding-top: 0;
+          flex-basis: 25%;
+          font-size: $font-size-medium;
+        }
+        h6 {
+          padding-top: 0;
+          flex-basis: 25%;
+        }
+        p {
+          flex-basis: 15%;
+          font-size: $font-size-medium;
+        }
+      }
+    }
+    .toggle-btn {
+      display: block;
+      margin-bottom: 3rem;
+      width: 33%;
+    }
+  }
+}

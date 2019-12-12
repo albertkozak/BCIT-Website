@@ -1,0 +1,72 @@
+// Students
+
+.responsive-table li {
+  border-radius: 0.2rem;
+  padding: 1.56rem 1.88rem;
+  justify-content: space-between;
+  margin-bottom: 1.56rem;
+  font-size: 1.1rem;
+  display: block;
+}
+.responsive-table .table-header {
+  background-color: $bcit-navy-light-hex;
+  font-size: $font-size-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $bcit-white;
+  display: none;
+}
+.responsive-table .table-row:nth-child(odd) {
+  background-color: #ffffff;
+  box-shadow: $box-shadow;
+}
+.responsive-table .table-row:nth-child(even) {
+  background-color: #f7f7f7;
+  box-shadow: $box-shadow;
+}
+.responsive-table .col {
+  flex-basis: 100%;
+}
+.responsive-table .col {
+  display: flex;
+  padding: 0.63rem 0;
+}
+.responsive-table .col:before {
+  color: #6c7a89;
+  padding-right: 0.63rem;
+  content: attr(data-label);
+  flex-basis: 50%;
+}
+.fab {
+  color: $bcit-navy-light-rgba;
+  padding: 0 0.2rem;
+  font-size: 2.5rem;
+}
+@media all and (min-width: $tablet-small) {
+  .responsive-table .table-header {
+    display: flex;
+  }
+  .responsive-table li {
+    display: flex;
+    font-size: $font-size-small;
+  }
+  .responsive-table .col-1 {
+    flex-basis: 15%;
+    justify-content: center;
+  }
+  .responsive-table .col-2 {
+    flex-basis: 40%;
+    justify-content: center;
+  }
+  .responsive-table .col-3 {
+    flex-basis: 25%;
+    justify-content: center;
+  }
+  .responsive-table .col-4 {
+    flex-basis: 25%;
+    justify-content: center;
+  }
+  .responsive-table .col:before {
+    display: none;
+  }
+}
